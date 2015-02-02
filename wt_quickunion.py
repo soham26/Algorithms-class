@@ -1,7 +1,9 @@
 """
 Weighted quick union to avoid larger trees. Here, always the smaller tree is added to the larger tree, hence max distance of any node from root is less than what we find in the normal implementation of quick union.
 
-Here we keep track of no. of objects in trees!! We connect any tree, object to the main parent roots! and the smaller is joined with the larger!
+Here we keep track of no. of objects in trees!!! Always, the tree with the smaller size gets attached to the larger tree.
+
+Also, each time a node is being added to another tree, the whole tree is being added to the root node of tree.
 """
 
 N=input('Enter the no. of nodes \n')
